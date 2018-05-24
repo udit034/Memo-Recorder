@@ -1,7 +1,7 @@
 module.exports = function( application ){
 
-application.get("/notesMemo", function( request, response ){
-
+application.get("/notesMemoView", function( request, response ){
+    response.render('VisibleMemos');
 });
 
 application.post("/notesMemo", function( request, response ){
